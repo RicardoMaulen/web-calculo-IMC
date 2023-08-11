@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>IMC</title>
+  </head>
+  <body>
+    <header>
+      <div class="img">
+        <h1>Indice de masa corporar (IMC)</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="containe__input">
+        <div class="mb-3 input">
+          <label for="peso" class="form-label">Peso:</label>
+          <input
+            type="number"
+            class="form-control"
+            name="peso"
+            id="peso"
+            aria-describedby="helpId"
+            placeholder="su peso en kilos 70" />
+        </div>
+
+        <div class="mb-3 input">
+          <label for="altura" class="form-label">Altura:</label>
+          <input
+            type="number"
+            class="form-control"
+            name="altura"
+            id="altura"
+            aria-describedby="helpId"
+            placeholder="su altura en mts 1.75" />
+        </div>
+        <br />
+
+        <div class="container__btn">
+          <button id="btn" onclick="imc()">Resultado</button>
+        </div>
+      </div>
+
+      <div id="resultado"></div>
+
+      <div class="consejo">
+        <div class="imc1 bajo_peso">
+          <p>
+            <span>
+              Si tienes un IMC bajo, es importante que
+              enfoques en ganar peso de manera saludable. Aquí tienes algunos
+              consejos:
+            </span>
+
+            <span>
+              <b>Alimentación balanceada:</b> Consume una variedad de alimentos
+              nutritivos como frutas, verduras, proteínas magras, granos enteros
+              y grasas saludables. Aumenta tu ingesta calórica pero evita
+              alimentos procesados en exceso.
+            </span>
+
+            <span>
+              <b>Comidas frecuentes:</b> Consume varias comidas pequeñas a lo
+              largo del día en lugar de tres comidas grandes. Esto ayudará a
+              mantener tu metabolismo activo y proporcionará una constante
+              fuente de energía.
+            </span>
+
+            <span>
+              <b>Proteínas:</b> Asegúrate de incluir suficientes proteínas en tu
+              dieta para ayudar en la construcción y reparación de tejidos.
+              Fuentes de proteínas incluyen carnes magras, pescado, legumbres y
+              productos lácteos bajos en grasa.
+            </span>
+            <br />
+
+            <span>
+              <b>Ejercicio:</b>
+              Incorpora ejercicios de fuerza para desarrollar masa muscular.
+              Consulta con un profesional de la salud antes de comenzar un
+              programa de ejercicios.
+            </span>
+
+            <i
+              >Recuerda que cada persona es única, por lo que es recomendable
+              consultar con un profesional de la salud antes de realizar cambios
+              significativos en la dieta o el ejercicio, especialmente si tienes
+              condiciones médicas preexistentes.
+            </i>
+          </p>
+        </div>
+
+        <div class="imc2 normal">
+          <p>
+            <span>
+              Mantener un peso saludable es importante para tu bienestar
+              general. Aquí tienes algunos consejos:
+            </span>
+
+            <span>
+              <b>Alimentación equilibrada:</b>
+              Sigue consumiendo una dieta balanceada que incluya una variedad de
+              alimentos nutritivos. Mantén porciones adecuadas y presta atención
+              a las señales de hambre y saciedad de tu cuerpo.
+              </span>
+
+            <span>
+              <b>Actividad física:</b>
+              Mantente activo con al menos 150 minutos de actividad aeróbica
+              moderada o 75 minutos de actividad vigorosa a la semana. También
+              incluye ejercicios de fuerza dos veces a la semana.
+            </span>
+
+            <span>
+              <b>Hidratación:</b>
+              Bebe suficiente agua a lo largo del día para mantener tu cuerpo
+              bien hidratado.
+            </span>
+
+            <i>
+              Recuerda que cada persona es única, por lo que es recomendable
+              consultar con un profesional de la salud antes de realizar cambios
+              significativos en la dieta o el ejercicio, especialmente si tienes
+              condiciones médicas preexistentes.
+            </i>
+          </p>
+        </div>
+
+        <div class="imc3 sobre_peso">
+          <p>
+            <span>
+              Si tienes sobrepeso, es importante abordar tu peso para reducir el
+              riesgo de problemas de salud. Aquí tienes algunos consejos:
+            </span>
+
+            <span>
+              <b>Alimentación consciente:</b>
+              Controla las porciones y presta atención a las señales de hambre y
+              saciedad. Limita el consumo de alimentos altos en calorías, grasas
+              saturadas y azúcares añadidos.
+            </span>
+
+            <span>
+              <b>Planificación de comidas:</b>
+              Organiza tus comidas y bocadillos para evitar decisiones
+              impulsivas poco saludables.
+            </span>
+
+            <span>
+              <b>Ejercicio regular:</b>
+              Aumenta la cantidad de actividad física en tu rutina diaria.
+              Combina ejercicios aeróbicos con ejercicios de fuerza para quemar
+              calorías y desarrollar músculo.
+            </span>
+
+            <span>
+              <b>Apoyo profesional:</b>
+              Considera hablar con un médico o un dietista para obtener
+              orientación personalizada sobre la pérdida de peso.
+            </span>
+
+            <i>
+              Recuerda que cada persona es única, por lo que es recomendable
+              consultar con un profesional de la salud antes de realizar cambios
+              significativos en la dieta o el ejercicio, especialmente si tienes
+              condiciones médicas preexistentes.
+            </i>
+          </p>
+        </div>
+
+        <div class="imc4 obesidad">
+          <p>
+            <span>
+              La obesidad conlleva un mayor riesgo para la salud, por lo que es
+              fundamental tomar medidas para reducir el peso de manera segura.
+              Aquí tienes algunos consejos:
+            </span>
+            <br />
+
+            <span>
+              <b>Cambios de estilo de vida:</b> Adopta hábitos de vida
+              saludables a largo plazo en lugar de buscar soluciones rápidas.
+              Esto incluye cambios en la dieta y la actividad física.
+            </span>
+            <br />
+
+            <span>
+              <b>Dieta nutritiva:</b> Opta por alimentos ricos en nutrientes y
+              bajos en calorías. Incrementa la ingesta de frutas, verduras,
+              granos enteros y proteínas magras.
+            </span>
+            <br />
+
+            <span>
+              <b>Ejercicio constante:</b> Establece un programa de ejercicios
+              que incluya una combinación de aeróbicos y ejercicios de fuerza.
+              Busca aumentar gradualmente la intensidad y duración de tus
+              sesiones.</span
+            >
+            <br />
+
+            <span>
+              <b>Apoyo emocional:</b> La obesidad a menudo está relacionada con
+              factores emocionales. Busca apoyo de amigos, familiares o incluso
+              un profesional de la salud mental.
+            </span>
+            <br />
+
+            <span>
+              <b>Supervisión médica:</b> En casos de obesidad severa, es
+              esencial trabajar con un equipo médico para diseñar un plan de
+              pérdida de peso seguro y efectivo.
+            </span>
+            <br />
+            <i
+              >Recuerda que cada persona es única, por lo que es recomendable
+              consultar con un profesional de la salud antes de realizar cambios
+              significativos en la dieta o el ejercicio, especialmente si tienes
+              condiciones médicas preexistentes.</i
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p class="copy">&copy; ricardo M. | 2023</p>
+    </footer>
+
+    <script src="js/imc.js"></script>
+  </body>
+</html>
