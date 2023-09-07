@@ -1,2 +1,2 @@
 # web-calculo-IMC
-pagina web de Ricky{Code}
+programa que calcula el IMC "indice de masa corpora"
